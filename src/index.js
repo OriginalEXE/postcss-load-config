@@ -55,10 +55,6 @@ const createContext = (ctx) => {
     env: process.env.NODE_ENV
   }, ctx)
 
-  if (!ctx.env) {
-    process.env.NODE_ENV = 'development'
-  }
-
   return ctx
 }
 
